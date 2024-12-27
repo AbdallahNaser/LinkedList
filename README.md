@@ -45,44 +45,19 @@ Each node in the list is represented by the `Node` structure, which holds:
 
 
 
-int main() {
-    linkedList l;
 
-    l.insertFirst(10);
-    l.insertLast(30);
-    l.insertLast(40);
-    l.insertAtPos(1, 20);
-    l.insertFirst(0);
-    l.insertLast(50);
-    l.print();
-    cout << "\n";
-
-    l.removeFirst();
-    l.print();
-
-    cout << "\n";
-
-    l.removeLast();
-    l.print();
-
-    cout << "\n";
-
-    l.removeE(20);
-    l.print();
-
-    l.reverse();
-    l.print();
-
-    cout << "\n" << l.Search(40);
-    return 0;
-}
 
 
 🧑‍💻 Example Output
 
 0 10 20 30 40 50
+
 10 20 30 40 50
+
 10 20 30 40
+
 10 30 40
+
 40 30 10
+
 40
