@@ -42,8 +42,36 @@ Each node in the list is represented by the `Node` structure, which holds:
 ---
 
 ## 📋 **Example Usage**
+int main() {
+    linkedList l;
 
+    l.insertFirst(10);
+    l.insertLast(30);
+    l.insertLast(40);
+    l.insertAtPos(1, 20);
+    l.insertFirst(0);
+    l.insertLast(50);
+    l.print();
+    cout << "\n";
 
+    l.removeFirst();
+    l.print();
+
+    cout << "\n";
+
+    l.removeLast();
+    l.print();
+
+    cout << "\n";
+
+    l.removeE(20);
+    l.print();
+
+    l.reverse();
+    l.print();
+
+    cout << "\n" << l.Search(40);
+    return 0;
 
 
 
